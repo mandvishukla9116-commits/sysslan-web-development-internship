@@ -10,11 +10,14 @@
         <h1>E-Commerce Store</h1>
     </header>
 
+    <script src="script.js"></script>
+
     <nav>
         <a href="#">Home</a>
         <a href="#">Products</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
+        <a href="#">Cart (<span id="cart-count">0</span>)</a>
     </nav>
 
     <section>
@@ -24,28 +27,47 @@
            <img src="laptop.jpg" alt="Laptop">
            <h3>Laptop</h3>
            <p> Price:₹50,000</p>
-           <button>Add to Cart</button>
+           <button onclick="addToCart()">Add to Cart</button>
           </div>
         <div class="product-card">
            <img src="phone.jpg" alt="Phone" width="250">
             <h3>Phone</h3>
             <p>Price: ₹20,000</p>
-            <button>Add to Cart</button>
+            <button onclick="addToCart()">Add to Cart</button>
         </div>
 
         <div class="product-card">
             <img src="headphone.jpg" alt="Headphones" width="250">
             <h3>Headphones</h3>
             <p>Price: ₹1,000</p>
-            <button>Add to Cart</button>
+            <button onclick="addToCart()">Add to Cart</button>
         </div>
         <div class="product-card">
              <img src="watch.jpg" alt="Watch" width="250">
              <h3>Watch</h3>
             <p>Price: ₹5,000</p>
-            <button>Add to Cart</button>
+            <button onclick="addToCart()">Add to Cart</button>
         </div>
     </section>
+    <section>
+    <h2>Contact Us</h2>
+
+    <form onsubmit="validateForm()">
+        <input type="text" placeholder="Your Name">
+
+        <br><br>
+
+        <input type="email" placeholder="Your Email">
+
+        <br><br>
+
+        <textarea placeholder="Your Message"></textarea>
+
+        <br><br>
+
+        <button type="submit">Send</button>
+    </form>
+</section>
 
     <footer>
         <p>© 2026 E-Commerce Store</p>
