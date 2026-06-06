@@ -78,3 +78,31 @@ button{
 button:hover{
     background-color: #2980b9;
 }
+.products{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+.product-card{
+    transition:0.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-5px);
+}
+.product-card{
+    box-shadow:0px 2px 10px rgba(0,0,0,0.2);
+}
+button{
+    background:#3498db;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2980b9;
+}
