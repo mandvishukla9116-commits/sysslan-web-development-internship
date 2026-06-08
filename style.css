@@ -106,3 +106,31 @@ button{
 button:hover{
     background:#2980b9;
 }
+/* Mobile Responsive Design */
+
+@media (max-width: 768px){
+
+    nav{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .product-card{
+        width:90%;
+        margin:15px auto;
+    }
+
+    header h1{
+        font-size:24px;
+    }
+
+    section h2{
+        text-align:center;
+    }
+
+    button{
+        width:100%;
+    }
+
+}
